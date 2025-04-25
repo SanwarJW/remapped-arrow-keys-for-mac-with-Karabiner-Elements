@@ -1,0 +1,52 @@
+{
+    "description": "Right Command + K = Arrow Keys with modifier passthrough",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "k",
+                "modifiers": { "mandatory": ["right_command", "left_command", "option"] }
+            },
+            "to": [
+                {
+                    "key_code": "up_arrow",
+                    "modifiers": ["left_command", "option"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "k",
+                "modifiers": { "mandatory": ["right_command", "left_command"] }
+            },
+            "to": [
+                {
+                    "key_code": "up_arrow",
+                    "modifiers": ["left_command"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "k",
+                "modifiers": { "mandatory": ["right_command", "option"] }
+            },
+            "to": [
+                {
+                    "key_code": "up_arrow",
+                    "modifiers": ["option"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "k",
+                "modifiers": { "mandatory": ["right_command"] }
+            },
+            "to": [{ "key_code": "up_arrow" }],
+            "type": "basic"
+        }
+    ]
+}
